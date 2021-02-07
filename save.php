@@ -13,6 +13,8 @@
             die("query failed");
         }
         
+        $_SESSION['message'] = 'tarea guardada satisfactoriamente';
+        $_SESSION['message-type'] = 'sucess';
         //redireccion en php
         header("Location: index.php");
     }
